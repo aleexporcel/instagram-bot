@@ -1,0 +1,44 @@
+extends:
+  - recommended/esnext
+  - recommended/esnext/style-guide
+  - recommended/node
+  - recommended/node/style-guide
+
+ignorePatterns:
+  - "**/node_modules/*"
+  - "*.json"
+  - "*.md"
+
+env:
+  jest: true
+
+rules:
+  import/no-commonjs: off
+  template-curly-spacing: off
+  space-before-function-paren: off
+  semi:
+    - error
+    - always
+  semi-style:
+    - error
+    - last
+  object-curly-newline:
+    - error
+    - ObjectExpression:
+        multiline: true
+  object-property-newline:
+    - error
+    - allowAllPropertiesOnSameLine: true
+  indent:
+    - error
+    - 2
+  curly:
+    - error
+    - all
+  arrow-parens:
+    - error
+    - always
+  no-multiple-empty-lines:
+    - error
+    - max: 1
+      maxEOF: 1
